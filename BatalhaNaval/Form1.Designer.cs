@@ -179,9 +179,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 13);
+            this.label2.Size = new System.Drawing.Size(224, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Os C — Todos os direitos reservados";
+            this.label2.Text = "Malyson Breno — Todos os direitos reservados";
             // 
             // BTN_SINGLEPLAYER
             // 
