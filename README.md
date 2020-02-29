@@ -1,6 +1,6 @@
 # BatalhaNaval
 
-[Downloads binaries](https://github.com/malysonb/BatalhaNaval/releases)
+[**Downloads binaries**](https://github.com/malysonb/BatalhaNaval/releases)
 
 Jogo multiplayer P2P com protocolo TCP com o .Net FrameWork 3.5
 
