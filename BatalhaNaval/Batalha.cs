@@ -72,7 +72,7 @@ namespace BatalhaNaval
             else
             {
                 GerarCampoIA();
-                BTN_DisconectarInGame.Text = "Sair";
+                BTN_DisconectarInGame.Text = "Exit";
             }
             TXT_NOME1battle.Text = nome1;
             for (int i = 0; i < 10; i++)
@@ -160,7 +160,7 @@ namespace BatalhaNaval
                     {
                         if (coord[0] + (tamanho[i]+1) > 9)
                         {
-                            Console.WriteLine("Pulando" + i);
+                            Console.WriteLine("Jumping" + i);
                         }
                         else
                         {
@@ -357,7 +357,7 @@ namespace BatalhaNaval
 
         private void BTN_DisconectarInGame_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Deseja sair?", "Aviso", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Do you want to exit the game?", "Alert!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 sair = true;
             }
@@ -406,7 +406,7 @@ namespace BatalhaNaval
                     Byte[] Exit = Encoding.ASCII.GetBytes("Sair");
                     stream.Write(Exit, 0, Exit.Length);
                     sair = true;
-                    MessageBox.Show("O outro jogador saiu");
+                    MessageBox.Show("The other player left the game");
                     client.Close();
                     break;
                 }
@@ -431,16 +431,16 @@ namespace BatalhaNaval
                     switch (acerto)
                     {
                         case 1:
-                            Status = "Seu ultimo acerto: Submarino";
+                            Status = "Your last hit: Submarine";
                             break;
                         case 2:
-                            Status = "Seu ultimo acerto: Destroyer";
+                            Status = "Your last hit: Destroyer";
                             break;
                         case 3:
-                            Status = "Seu ultimo acerto: Navio Tanque";
+                            Status = "Your last hit: Tanker";
                             break;
                         case 4:
-                            Status = "Seu ultimo acerto: Porta Avião";
+                            Status = "Your last hit: Aircraft Carrier";
                             break;
                     }
                 }
@@ -448,7 +448,7 @@ namespace BatalhaNaval
                 {
                     Console.WriteLine("miss");
                     Opponent[lastAttack[0], lastAttack[1]] = 1;
-                    Status = "Ultimo acerto: Água";
+                    Status = "Your last hit: Water";
                     minhavez = !minhavez;
                     //FeedBack(lastAttack[0], lastAttack[1]);
                     mudanca = true;
@@ -481,16 +481,16 @@ namespace BatalhaNaval
                                 switch (acerto)
                                 {
                                     case 1:
-                                        Status = "Seu ultimo acerto: Submarino";
+                                        Status = "Your last hit: Submarine";
                                         break;
                                     case 2:
-                                        Status = "Seu ultimo acerto: Destroyer";
+                                        Status = "Your last hit: Destroyer";
                                         break;
                                     case 3:
-                                        Status = "Seu ultimo acerto: Navio Tanque";
+                                        Status = "Your last hit: Tanker";
                                         break;
                                     case 4:
-                                        Status = "Seu ultimo acerto: Porta Avião";
+                                        Status = "Your last hit: Aircraft Carrier";
                                         break;
                                 }
                                 mudanca = true;
@@ -500,7 +500,7 @@ namespace BatalhaNaval
                             }
                             else if (iaField[e.RowIndex, e.ColumnIndex - 1] == 0)
                             {
-                                Status = "Seu ultimo acerto: Água";
+                                Status = "Your last hit: Water";
                                 Opponent[lastAttack[0], lastAttack[1]] = 1;
                                 minhavez = !minhavez;
                                 mudanca = true;
@@ -785,46 +785,46 @@ namespace BatalhaNaval
             {
                 acabou = true;
                 sair = true;
-                MessageBox.Show("Você Perdeu!");
+                MessageBox.Show("You lost the game!");
             }
             if (eHP == 0 && acabou == false)
             {
                 acabou = true;
                 sair = true;
-                MessageBox.Show("Você Ganhou!");
+                MessageBox.Show("You won the game!");
             }
 
             TXT_NOME1battle.Text = nome1 + "\n" +
-               "Pontos: " + Pontos + "\n" +
-               "Restam :" + "\n" +
-               leftMe[0] + " submarinos\n" +
+               "Points: " + Pontos + "\n" +
+               "Still left :" + "\n" +
+               leftMe[0] + " submarines\n" +
                leftMe[1] + " Destroyers\n" +
-               leftMe[2] + " Navios tanque\n" +
-               leftMe[3] + " Porta Avião";
+               leftMe[2] + " Tankers\n" +
+               leftMe[3] + " Aircraft Carrier";
             TXT_NOMEOP.Text = nome2 + "\n" +
-               "Pontos: " + EnemyPontos + "\n" +
-               "Restam :" + "\n" +
-               leftOP[0] + " — submarinos\n" +
+               "Points: " + EnemyPontos + "\n" +
+               "Still left :" + "\n" +
+               leftOP[0] + " — submarines\n" +
                leftOP[1] + " — Destroyers\n" +
-               leftOP[2] + " — Navios tanque\n" +
-               leftOP[3] + " — Porta Avião";
+               leftOP[2] + " — Tankers\n" +
+               leftOP[3] + " — Aircraft Carrier";
             if (minhavez)
             {
-                TXT_VEZ.Text = "SEU TURNO!";
+                TXT_VEZ.Text = "Your turn!";
             }
             else
             {
-                TXT_VEZ.Text = "TURNO DO OPONENTE";
+                TXT_VEZ.Text = "Opponent's turn!";
                 if (!online)
                 {
                     Pensar();
                     if (pesquisando)
                     {
-                        nome2 = "PENSANDO...";
+                        nome2 = "THINKING...";
                     }
                     else
                     {
-                        nome2 = "Jogando Aleatório";
+                        nome2 = "Shooting Randomly...";
                     }
                 }
             }

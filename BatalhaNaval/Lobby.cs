@@ -44,7 +44,7 @@ namespace BatalhaNaval
                 }
             }
             else
-                BTN_DisconectarLobby.Text = "Sair";
+                BTN_DisconectarLobby.Text = "Exit";
             this.online = online;
             this.nome1 = Nome1;
             this.nome2 = Nome2;
@@ -522,7 +522,7 @@ namespace BatalhaNaval
                 {
                     tentando = true;
                     this.Close();
-                    MessageBox.Show("Você perdeu a conexão.");
+                    MessageBox.Show("You lost the connection to the host.");
                 }
             }
         }
@@ -545,7 +545,7 @@ namespace BatalhaNaval
                             Byte[] Exit = Encoding.ASCII.GetBytes("Sair");
                             stream.Write(Exit, 0, Exit.Length);
                             saiu = true;
-                            MessageBox.Show("O outro jogador saiu");
+                            MessageBox.Show("The other player left the game");
                             client.Close();
                             break;
                         }
@@ -593,7 +593,7 @@ namespace BatalhaNaval
                             Byte[] Exit = Encoding.ASCII.GetBytes("Sair");
                             stream.Write(Exit, 0, Exit.Length);
                             saiu = true;
-                            MessageBox.Show("O outro jogador saiu");
+                            MessageBox.Show("The other player left the game");
                             client.Close();
                             break;
                         }
@@ -622,7 +622,7 @@ namespace BatalhaNaval
                     tentando = false;
                     stream.Flush();
                     client.Close();
-                    MessageBox.Show("Erro ao receber mensagem" + nome1 + "\n" + e);
+                    MessageBox.Show("Can't to receive the message" + nome1 + "\n" + e);
                 }
             }
 

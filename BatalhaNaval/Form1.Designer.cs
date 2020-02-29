@@ -61,16 +61,16 @@
             this.GRUPO_ONLINE.Size = new System.Drawing.Size(397, 181);
             this.GRUPO_ONLINE.TabIndex = 8;
             this.GRUPO_ONLINE.TabStop = false;
-            this.GRUPO_ONLINE.Text = "Jogar via LAN/Online";
+            this.GRUPO_ONLINE.Text = "LAN/Online";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(218, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.Size = new System.Drawing.Size(115, 13);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Jogos nesta rede:";
+            this.label1.Text = "Games at this network:";
             // 
             // BTN_REFRESH
             // 
@@ -78,7 +78,7 @@
             this.BTN_REFRESH.Name = "BTN_REFRESH";
             this.BTN_REFRESH.Size = new System.Drawing.Size(172, 23);
             this.BTN_REFRESH.TabIndex = 6;
-            this.BTN_REFRESH.Text = "Atualizar";
+            this.BTN_REFRESH.Text = "Refresh";
             this.BTN_REFRESH.UseVisualStyleBackColor = true;
             this.BTN_REFRESH.Click += new System.EventHandler(this.BTN_REFRESH_Click);
             // 
@@ -99,7 +99,7 @@
             this.GRUPO_HOST.Size = new System.Drawing.Size(206, 51);
             this.GRUPO_HOST.TabIndex = 3;
             this.GRUPO_HOST.TabStop = false;
-            this.GRUPO_HOST.Text = "Hospedar partida — *:8585";
+            this.GRUPO_HOST.Text = "Host a match — *:8585";
             // 
             // BTN_CREATEMATCH
             // 
@@ -107,7 +107,7 @@
             this.BTN_CREATEMATCH.Name = "BTN_CREATEMATCH";
             this.BTN_CREATEMATCH.Size = new System.Drawing.Size(100, 23);
             this.BTN_CREATEMATCH.TabIndex = 2;
-            this.BTN_CREATEMATCH.Text = "Criar Partida";
+            this.BTN_CREATEMATCH.Text = "Create a match";
             this.BTN_CREATEMATCH.UseVisualStyleBackColor = true;
             this.BTN_CREATEMATCH.Click += new System.EventHandler(this.BTN_CREATEMATCH_Click);
             // 
@@ -121,7 +121,7 @@
             this.GRUPO_ENTERMATCH.Size = new System.Drawing.Size(206, 100);
             this.GRUPO_ENTERMATCH.TabIndex = 4;
             this.GRUPO_ENTERMATCH.TabStop = false;
-            this.GRUPO_ENTERMATCH.Text = "Entrar em uma partida";
+            this.GRUPO_ENTERMATCH.Text = "Join to a game";
             // 
             // BTN_ENTRAR
             // 
@@ -129,7 +129,7 @@
             this.BTN_ENTRAR.Name = "BTN_ENTRAR";
             this.BTN_ENTRAR.Size = new System.Drawing.Size(103, 23);
             this.BTN_ENTRAR.TabIndex = 3;
-            this.BTN_ENTRAR.Text = "Juntar-se a Partida";
+            this.BTN_ENTRAR.Text = "Join a match";
             this.BTN_ENTRAR.UseVisualStyleBackColor = true;
             this.BTN_ENTRAR.Click += new System.EventHandler(this.BTN_ENTRAR_Click);
             // 
@@ -138,9 +138,9 @@
             this.TXT_INSERT_ADDRESS.AutoSize = true;
             this.TXT_INSERT_ADDRESS.Location = new System.Drawing.Point(6, 16);
             this.TXT_INSERT_ADDRESS.Name = "TXT_INSERT_ADDRESS";
-            this.TXT_INSERT_ADDRESS.Size = new System.Drawing.Size(144, 13);
+            this.TXT_INSERT_ADDRESS.Size = new System.Drawing.Size(120, 13);
             this.TXT_INSERT_ADDRESS.TabIndex = 2;
-            this.TXT_INSERT_ADDRESS.Text = "Insira o endereço do servidor";
+            this.TXT_INSERT_ADDRESS.Text = "IP Address of the server";
             // 
             // TXB_ADDRESS
             // 
@@ -156,9 +156,9 @@
             this.TXT_NOMEONLINE.AutoSize = true;
             this.TXT_NOMEONLINE.Location = new System.Drawing.Point(12, 10);
             this.TXT_NOMEONLINE.Name = "TXT_NOMEONLINE";
-            this.TXT_NOMEONLINE.Size = new System.Drawing.Size(84, 13);
+            this.TXT_NOMEONLINE.Size = new System.Drawing.Size(88, 13);
             this.TXT_NOMEONLINE.TabIndex = 7;
-            this.TXT_NOMEONLINE.Text = "Insira seu nome:";
+            this.TXT_NOMEONLINE.Text = "Insert your name:";
             // 
             // TXB_NOMEONLINE
             // 
@@ -167,7 +167,7 @@
             this.TXB_NOMEONLINE.Name = "TXB_NOMEONLINE";
             this.TXB_NOMEONLINE.Size = new System.Drawing.Size(212, 20);
             this.TXB_NOMEONLINE.TabIndex = 6;
-            this.TXB_NOMEONLINE.Text = "Jogador";
+            this.TXB_NOMEONLINE.Text = "Player";
             // 
             // Tic_Tac
             // 
@@ -179,9 +179,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(224, 13);
+            this.label2.Size = new System.Drawing.Size(131, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Malyson Breno — Todos os direitos reservados";
+            this.label2.Text = "Created by Malyson Breno";
             // 
             // BTN_SINGLEPLAYER
             // 
@@ -189,7 +189,7 @@
             this.BTN_SINGLEPLAYER.Name = "BTN_SINGLEPLAYER";
             this.BTN_SINGLEPLAYER.Size = new System.Drawing.Size(179, 22);
             this.BTN_SINGLEPLAYER.TabIndex = 10;
-            this.BTN_SINGLEPLAYER.Text = "Um jogador — Offline";
+            this.BTN_SINGLEPLAYER.Text = "SinglePlayer — Offline (Buggy)";
             this.BTN_SINGLEPLAYER.UseMnemonic = false;
             this.BTN_SINGLEPLAYER.UseVisualStyleBackColor = true;
             this.BTN_SINGLEPLAYER.Click += new System.EventHandler(this.BTN_SINGLEPLAYER_Click);
@@ -207,7 +207,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Batalha Naval";
+            this.Text = "Battleship game";
             this.GRUPO_ONLINE.ResumeLayout(false);
             this.GRUPO_ONLINE.PerformLayout();
             this.GRUPO_HOST.ResumeLayout(false);

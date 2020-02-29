@@ -260,7 +260,7 @@
             this.groupBox1.Size = new System.Drawing.Size(193, 120);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Informações do Oponente";
+            this.groupBox1.Text = "Opponent status:";
             // 
             // TXT_NOMEOP
             // 
@@ -279,7 +279,7 @@
             this.groupBox2.Size = new System.Drawing.Size(193, 120);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Suas Informações";
+            this.groupBox2.Text = "Your status:";
             // 
             // TXT_LAST
             // 
@@ -305,7 +305,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Batalha";
-            this.Text = "Batalha";
+            this.Text = "Battle";
             ((System.ComponentModel.ISupportInitialize)(this.Grade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Minha)).EndInit();
             this.groupBox1.ResumeLayout(false);

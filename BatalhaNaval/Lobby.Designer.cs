@@ -83,7 +83,7 @@
             this.BTN_DisconectarLobby.Name = "BTN_DisconectarLobby";
             this.BTN_DisconectarLobby.Size = new System.Drawing.Size(80, 23);
             this.BTN_DisconectarLobby.TabIndex = 2;
-            this.BTN_DisconectarLobby.Text = "Desconectar";
+            this.BTN_DisconectarLobby.Text = "Disconnect";
             this.BTN_DisconectarLobby.UseVisualStyleBackColor = true;
             this.BTN_DisconectarLobby.Click += new System.EventHandler(this.BTN_DisconectarLobby_Click);
             // 
@@ -108,7 +108,7 @@
             this.BTN_Submarino.Name = "BTN_Submarino";
             this.BTN_Submarino.Size = new System.Drawing.Size(87, 23);
             this.BTN_Submarino.TabIndex = 5;
-            this.BTN_Submarino.Text = "Submarino";
+            this.BTN_Submarino.Text = "Submarine";
             this.BTN_Submarino.UseVisualStyleBackColor = true;
             this.BTN_Submarino.Click += new System.EventHandler(this.BTN_Submarino_Click);
             // 
@@ -128,7 +128,7 @@
             this.BTN_Navio_Tanque.Name = "BTN_Navio_Tanque";
             this.BTN_Navio_Tanque.Size = new System.Drawing.Size(87, 23);
             this.BTN_Navio_Tanque.TabIndex = 5;
-            this.BTN_Navio_Tanque.Text = "Navio Tanque";
+            this.BTN_Navio_Tanque.Text = "Tanker";
             this.BTN_Navio_Tanque.UseVisualStyleBackColor = true;
             this.BTN_Navio_Tanque.Click += new System.EventHandler(this.BTN_Navio_Tanque_Click);
             // 
@@ -138,7 +138,7 @@
             this.BTN_Porta_Aviao.Name = "BTN_Porta_Aviao";
             this.BTN_Porta_Aviao.Size = new System.Drawing.Size(87, 23);
             this.BTN_Porta_Aviao.TabIndex = 5;
-            this.BTN_Porta_Aviao.Text = "Porta Avião";
+            this.BTN_Porta_Aviao.Text = "Aircraft Carrier";
             this.BTN_Porta_Aviao.UseVisualStyleBackColor = true;
             this.BTN_Porta_Aviao.Click += new System.EventHandler(this.BTN_Porta_Aviao_Click);
             // 
@@ -149,7 +149,7 @@
             this.CHK_READY.Name = "CHK_READY";
             this.CHK_READY.Size = new System.Drawing.Size(57, 17);
             this.CHK_READY.TabIndex = 6;
-            this.CHK_READY.Text = "Pronto";
+            this.CHK_READY.Text = "Ready";
             this.CHK_READY.UseVisualStyleBackColor = true;
             this.CHK_READY.CheckedChanged += new System.EventHandler(this.CHK_READY_CheckedChanged);
             // 
@@ -161,7 +161,7 @@
             this.CHK_OPONENTE.Name = "CHK_OPONENTE";
             this.CHK_OPONENTE.Size = new System.Drawing.Size(73, 17);
             this.CHK_OPONENTE.TabIndex = 7;
-            this.CHK_OPONENTE.Text = "Oponente";
+            this.CHK_OPONENTE.Text = "Opponent";
             this.CHK_OPONENTE.UseVisualStyleBackColor = true;
             // 
             // TXT_INFO
@@ -170,9 +170,9 @@
             this.TXT_INFO.Enabled = false;
             this.TXT_INFO.Location = new System.Drawing.Point(147, 250);
             this.TXT_INFO.Name = "TXT_INFO";
-            this.TXT_INFO.Size = new System.Drawing.Size(194, 13);
+            this.TXT_INFO.Size = new System.Drawing.Size(133, 13);
             this.TXT_INFO.TabIndex = 8;
-            this.TXT_INFO.Text = "Botão direito no mouse para virar peças";
+            this.TXT_INFO.Text = "Right click to turn the ship.";
             // 
             // BTN_RESET
             // 
@@ -180,7 +180,7 @@
             this.BTN_RESET.Name = "BTN_RESET";
             this.BTN_RESET.Size = new System.Drawing.Size(75, 23);
             this.BTN_RESET.TabIndex = 9;
-            this.BTN_RESET.Text = "Resetar Campo";
+            this.BTN_RESET.Text = "Reset";
             this.BTN_RESET.UseVisualStyleBackColor = true;
             this.BTN_RESET.Click += new System.EventHandler(this.BTN_RESET_Click);
             // 

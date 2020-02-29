@@ -35,11 +35,11 @@
             // TXT_AGUARDE
             // 
             this.TXT_AGUARDE.AutoSize = true;
-            this.TXT_AGUARDE.Location = new System.Drawing.Point(35, 35);
+            this.TXT_AGUARDE.Location = new System.Drawing.Point(42, 35);
             this.TXT_AGUARDE.Name = "TXT_AGUARDE";
-            this.TXT_AGUARDE.Size = new System.Drawing.Size(139, 13);
+            this.TXT_AGUARDE.Size = new System.Drawing.Size(128, 13);
             this.TXT_AGUARDE.TabIndex = 0;
-            this.TXT_AGUARDE.Text = "Aguardando outro jogador...";
+            this.TXT_AGUARDE.Text = "Waiting for another player";
             this.TXT_AGUARDE.UseWaitCursor = true;
             // 
             // BTN_ABORTAR
@@ -49,8 +49,9 @@
             this.BTN_ABORTAR.Name = "BTN_ABORTAR";
             this.BTN_ABORTAR.Size = new System.Drawing.Size(75, 23);
             this.BTN_ABORTAR.TabIndex = 1;
-            this.BTN_ABORTAR.Text = "Abortar";
+            this.BTN_ABORTAR.Text = "Abort";
             this.BTN_ABORTAR.UseVisualStyleBackColor = true;
+            this.BTN_ABORTAR.UseWaitCursor = true;
             // 
             // Aguarde
             // 
@@ -64,7 +65,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Aguarde";
-            this.Text = "Aguardando o outro jogador";
+            this.Text = "Waiting for another player";
             this.UseWaitCursor = true;
             this.ResumeLayout(false);
             this.PerformLayout();
